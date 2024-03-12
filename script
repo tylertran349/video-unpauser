@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Unpause video player and 20 minute auto refresh
+// @name         Unpause video player
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Unpause all video players every 10 seconds
@@ -8,10 +8,6 @@
 // @match        *://puppybear.tv/*
 // @grant        none
 // ==/UserScript==
-
-window.setTimeout(function(){
-    location.reload();
-}, 1200000); // 1200000 milliseconds = 20 minutes
 
 (function() {
     'use strict';
@@ -24,5 +20,4 @@ window.setTimeout(function(){
             }
         }
     }, 5000);  // 5000 milliseconds = 5 seconds
-
 })();
